@@ -62,7 +62,7 @@ cacheSolve <- function(x, ...) {
   x_old <- x$get()
   
   # check if isn't null or same as before
-  if(!is.null(m) && x == x_old){
+  if(!is.null(m) && x != x_old){
     
     # the inverse was previously calculated and the input matrix is same as before
     # returning the matrix from cache
